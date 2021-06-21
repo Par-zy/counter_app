@@ -8,20 +8,27 @@ void main() {
 class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    void increment() {}
+    var count = 0;
+
+    void increment() {
+      count++;
+      print(count);
+    }
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Stardand Title"),
+        title: Text("Build 0.1 - Teste"),
       ),
       body: Center(
           child: Text(
-        "CONTADOR\n0",
+        "CONTADOR\n$count",
         textAlign: TextAlign.center,
       )),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: () {},
+        onPressed: () {
+          increment();
+        },
       ),
     );
   }
