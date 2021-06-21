@@ -11,15 +11,15 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
+  var count = 0;
+
+  void increment() {
+    count++;
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
-    var count = 0;
-
-    void increment() {
-      count++;
-      print(count);
-    }
-
     return Scaffold(
       appBar: AppBar(
         title: Text("Build 0.1 - Teste"),
