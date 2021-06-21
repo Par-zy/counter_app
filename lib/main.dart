@@ -8,6 +8,8 @@ void main() {
 class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    void increment() {}
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Stardand Title"),
